@@ -2,6 +2,7 @@
 Se desea hacer un algoritmo que simule un combate por turnos entre 2 guerreros medievales. 
 Para ello el usuario podrá elegir entre *3 tipos de guerreros*: ***infantería***, ***caballería*** y ***arquero***. 
 Cada una de estas clases tienen una cantidad de vida determinada, un daño y en algunos casos se puede elegir entre más de un arma. 
+
 Esta información se muestra en la siguiente tabla:
 
 Guerrero   | Arma               | Daño del arma | Vida
