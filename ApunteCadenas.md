@@ -6,7 +6,7 @@ Empecemos:
 1. `cadena1.compare(cadena2)` - devuelve 0 si la cadena1 tiene la misma cantidad de caracteres que la cadena2, sino devuelve 1 cuando la cadena1 tiene más caracteres que la cadena2 o -1 en viceversa.
 4. `cadena1.erase(inicio, cant)` - borra caracteres desde ***inicio*** que representa la posición desde la cual se quiere comenzar a borrar y ***cant*** representa la cantidad de caracteres que queremos borrar. Dichas variables son numéricas. 
 5. `cadena1.assign(cadena2)` - copia toda la cadena2 en la cadena1.
-6. `cadena1.assign(cadena2, inicio, cant)` - copia de la ***cadena2*** los caracteres indicados desde ***inicio*** y la cantidad (cant)*** que deseamos copiar en la cadena1.
+6. `cadena1.assign(cadena2, inicio, cant)` - copia de la ***cadena2*** los caracteres indicados desde ***inicio*** y la cantidad ***(cant)*** que deseamos copiar en la cadena1.
 
 Las funciones que no tengan referencias hacia algún ejemplo dentro de este apunte, quedará para que los realicen ustedes mismos en el entorno que quieran (DevC++, CodeBlocks o Visual Studio) y corroborar dichas funcionalidades.
 
@@ -18,6 +18,7 @@ Por otra parte, se pueden convertir tipos de datos alfanuméricos, como son los 
 ## Ejemplos
 ### Conversión de tipos de datos
 A continuación, piense cuál sería la salida por consola del siguiente algoritmo y luego inténtelo ud. mismo para corroborar el resultado.
+
 ```cpp
 #include <iostream>
 #include <string.h>
@@ -34,10 +35,12 @@ int main()
     return 0;
 }
 ```
-> **Para pensar**: ¿Puedo convertir tipos de datos numéricos en tipos de datos alfanuméricos?
+> **Para pensar: ¿Puedo convertir tipos de datos numéricos en tipos de datos alfanuméricos?**
 
+---
 ### Funciones *size* - *empty*
 Nuevamente reflexione cuál sería la salida del siguiente algoritmo.
+
 ```cpp
 #include <iostream>
 #include <string.h>
@@ -58,8 +61,12 @@ int main()
 ```
 En este caso la consola mostraría lo siguiente:
 > La cadena posee: 6 caracteres
-La cadena está vacía?
-No, no lo está
+
+> La cadena está vacía?
+
+> No, no lo está
+
+---
 
 ### Función *erase*
 ```cpp
@@ -80,10 +87,12 @@ int main()
 ```
 En la consola obtenemos la siguiente salida:
 > Caracteres que quedan
-rcus
 
-Ahora bien, qué sucedería si quisiera sacar vocales o consonantes de una palabra dada. 
+> rcus
+
+Ahora bien, ***¿qué sucedería si quisiera sacar vocales o consonantes de una palabra dada?*** 
 Analice el siguiente código:
+
 ```cpp
 #include <iostream>
 #include <string.h>
@@ -102,7 +111,7 @@ int main()
     return 0;   
 }
 ```
-*¿Qué devuelve la por consola el algoritmo anteriormente presentado? ¿Funciona?*
+***¿Qué devuelve la por consola el algoritmo anteriormente presentado? ¿Funciona?***
 
 Reflexione y haga un algoritmo para contar vocales de una palabra cualquiera ingresada por teclado tomando como base el algoritmo anterior. Trate de usar if para las vocales, ya que las consonantes son unas cuantas y tener una sentencia if de 2 km no es bueno para el compilador.
 
@@ -160,6 +169,8 @@ int main()
 }    
 ```
 Tanto la función `Saludar` como la función `Responder`, muestran por pantalla una cadena de caracteres con sus espacios y sus signos de interrogación.
+
+---
 
 ### Cuidados
 Al trabajar con cadenas de caracteres del tipo string se suscitan errores muy extraños como por ejemplo `“unsigned const *char to const char”`, entre otros de la misma índole. Esto se debe a que los datos de tipo string son en realidad punteros que “apuntan” (valga la redundancia) a la memoria donde está ubicada una clase llamada `string` y con cada creación de esas variables estaríamos implementando un objeto... No se me pongan nerviosos, tomense un mate y relajen (pero no tanto), ya entenderemos más adelante qué hacer con esta wea de las clases, los objetos y los punteros.
