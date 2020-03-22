@@ -18,3 +18,5 @@ En la implementación deberá probar distintos casos, estos serán:
 Hacer una función externa llamada Combate que haga un loop hasta que alguno de los combatientes muera (puede usar un *while* o un *repeat*
 ). 
 Usar dicha función para los 3 combates.
+
+***En el final de cada combate deberá mostrar cuál es la vida restante del jugador y del enemigo, verificar quién ha ganado el combate y si es lo que esperaba de dicha prueba.***
